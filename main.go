@@ -21,6 +21,16 @@ type Employee struct {
 	Created time.Time
 }
 
+func echoHandler(w http.ResponseWriter, r *http.Request) {
+
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
+	fmt.Fprint(w, "Hello World")
+
+}
+
 // indexHandler responds to requests.
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 
@@ -66,8 +76,9 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", indexHandler)
-
+	http.HandleFunc("/test", indexHandler)
+	http.HandleFunc("/", echoHandler)
+	
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
