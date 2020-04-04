@@ -1,6 +1,4 @@
-module example.com/m
-
-// require v1.1.0
+module github.com/neilghosh/go-starter-service
 
 go 1.12
 
