@@ -17,7 +17,7 @@ func checkError(err error, t *testing.T) {
 
 func TestIndexHandler(t *testing.T) {
 
-	req, err := http.NewRequest("GET", "/?key=foo", nil)
+	req, err := http.NewRequest("GET", "/test?key=foo", nil)
 
 	checkError(err, t)
 
