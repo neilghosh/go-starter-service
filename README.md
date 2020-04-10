@@ -29,11 +29,16 @@ go run main.go
 ## Invoke Endpoint
 Check the portn in which the server is running
 ```
-curl curl localhost:8080 
-curl localhost:8080/test?key=test
-```
-Check newly created entities
+POST localhost:8080/api?id=004161a0-b42b-4ccb-ac2c-dd7c6a81e049 
+{Name:test Content:someContent EventDate:2019-11-05 13:15:30 +0000 UTC}
 
+GET localhost:8080/api?id=004161a0-b42b-4ccb-ac2c-dd7c6a81e049
+
+PUT localhost:8080/test?id=004161a0-b42b-4ccb-ac2c-dd7c6a81e049
+{Name:test Content:someContent EventDate:2019-11-05 13:15:30 +0000 UTC}
+
+DELETE localhost:8080/api?id=004161a0-b42b-4ccb-ac2c-dd7c6a81e049
+```
 
 ## Debug 
 Install ```dlv```
