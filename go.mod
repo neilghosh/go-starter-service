@@ -1,4 +1,4 @@
-module github.com/neilghosh/event-feeder
+module github.com/neilghosh/go-starter-service
 
 // require v1.1.0
 
