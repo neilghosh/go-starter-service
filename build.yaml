@@ -1,4 +1,7 @@
+substitutions:
+  _NOPROMOTE: --no-promote
+  
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy']
+  args: ['app', 'deploy', '${_NOPROMOTE}' ]
   timeout: '300s'
