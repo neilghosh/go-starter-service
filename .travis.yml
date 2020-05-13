@@ -1,4 +1,6 @@
 language: go
+env:
+  - GOOGLE_APPLICATION_CREDENTIALS=demoneil-adc7162180c1.json
 before_install:
 - openssl aes-256-cbc -K $encrypted_4767c4c300b2_key -iv $encrypted_4767c4c300b2_iv
   -in demoneil-adc7162180c1.json.enc -out demoneil-adc7162180c1.json -d
