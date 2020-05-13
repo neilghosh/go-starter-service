@@ -2,6 +2,8 @@
 This is a sample go app for go 1.12+. This example simply takes a request at the home URL and writes some sample data to Google Cloud Datastore (of a pre-configured GCP project).
 This uses go modules for dependency to avoid all the confusion around GOPATH and relative directory of external packages.
 
+[![Build Status](https://travis-ci.com/neilghosh/go-starter-service.svg?branch=master)](https://travis-ci.com/neilghosh/go-starter-service)
+
 ## Install Go and Google Cloud SDK 
 Note that if the min version is not met , go module features won't work.
 https://golang.org/doc/install
