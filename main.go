@@ -42,7 +42,7 @@ func echoHandler(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
-	fmt.Fprint(w, "Hello Branch")
+	fmt.Fprint(w, "Hello Master")
 }
 
 func restHandler(w http.ResponseWriter, r *http.Request) {
