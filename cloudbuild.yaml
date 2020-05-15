@@ -3,6 +3,6 @@ substitutions:
   
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', '${_NOPROMOTE}' ]
+  args: ['app', 'deploy', '${_NOPROMOTE}', --version=$SHORT_SHA]
   timeout: '300s'
   
