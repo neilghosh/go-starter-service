@@ -69,3 +69,5 @@ Then you can debug from VSCode with the following run debug configuration
 * https://blog.golang.org/json-and-go
 * https://www.sohamkamani.com/blog/2017/10/18/parsing-json-in-golang/
 * https://golang.org/pkg/net/http/httptest/#NewRequest
+
+Lets assume bug is fixed by this 
